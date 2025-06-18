@@ -1,7 +1,9 @@
 <!DOCTYPE html>
 
-<html>
+<html lang="en">
    <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <title>File Metadata</title>
       <link rel="shortcut icon" href="https://cdn.freecodecamp.org/universal/favicons/favicon-32x32.png" type="image/x-icon"/>
       <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet" type="text/css">
@@ -19,7 +21,8 @@
         <div class="view">
           <h3 id="output"></h3>
           <form enctype="multipart/form-data" method="POST" action="/api/fileanalyse">
-            <input id="inputfield" type="file" name="upfile">
+            <label for="inputfield">Choose a file to upload:</label>
+            <input id="inputfield" type="file" name="upfile" title="Choose a file to upload">
             <input id="button" type="submit" value="Upload">
           </form>
         </div>
